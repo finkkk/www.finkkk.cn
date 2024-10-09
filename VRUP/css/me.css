@@ -1,0 +1,96 @@
+#body {
+  background: #280045;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* Call To Action Section
+--------------------------------*/
+#call-to-action {
+  margin-top: 100px;
+  background-size: cover;
+  padding: 0;
+}
+
+#call-to-action .cta-title {
+  color: #e91e63;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 62px;
+}
+.cta-text {
+  margin-top: 100px;
+  color: #fff;
+  font-size: 20px;
+}
+.cta-btn-container img {
+  width: 100%;
+}
+@media (min-width: 769px) {
+  #call-to-action .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 26px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin: 0;
+  border: 2px solid #e91e63;
+  color: #e91e63;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #e91e63;
+  border: 3px solid #e91e63;
+  color: #fff;
+}
+.single-about-add-info {
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.block-header {
+  margin: 10px;
+  padding: 10px;
+}
+.block-header h2 {
+  margin-top: 60px;
+  font-size: 60px;
+  color: #c8003a;
+  text-align: center;
+  font-weight: 900;
+}
+
+.say {
+  margin-top: 100px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-weight: 900;
+}
+
+@media (max-width: 769px) {
+  .cta-text {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .block-header h2 {
+    margin-top: 20px;
+    font-size: 60px;
+    color: #c8003a;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: -50px;
+  }
+}

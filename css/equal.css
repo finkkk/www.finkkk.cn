@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainCotainer {
+    padding: 24px;
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+.equalTitle {
+    justify-content: space-between;
+}
+
+.button {
+    width: 150px;
+    border: 1px solid lightgray;
+    background-color: transparent;
+    border-radius: 36px;
+    padding: 6px 18px;
+
+}
+
+.equalDevice .click {
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.equalDevice .click span {
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+
+}
+
+.equalDevice .click .arrow {
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.equalDevice .click .slideList {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: -3%;
+    top: 98%;
+    z-index: 9;
+    padding: 10px 10px 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    border-top: 1px solid black;
+    background-color: white;
+    height: 200px;
+    overflow-y:scroll;
+}
+
+.equalDevice .click .slideList ul {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.equalDevice .click .slideList ul li {
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.equalDevice p {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 18px;
+}
+
+.botBottom {
+    display: none;
+}
+
+
+
+@media (max-width:576px) {
+    .topBottom {
+        display: none;
+    }
+
+    .botBottom {
+        display: block;
+    }
+}
+
+@media (max-width:992px) {
+    .equalCnt .equalDevice:last-child {
+        display: none !important;
+    }
+    .last{
+        display: none;
+    }
+}
+
+@media (min-width:1440px){
+    .mainCotainer{
+        max-width: 1440px !important;
+        margin: 20px auto !important;
+        padding: 0;
+    }
+}
+
+
+.equalDevice img {
+
+    width: 100%;
+}
+.equalData .header {
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.equalData .header .title{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equalData .equalDataItem{
+    position: relative;
+}
+.equalData .equalDataItem .title .arrow{
+    width: 15px;
+    height: 15px;
+    margin: auto 0;
+    
+}
+.equalData .equalDataItem:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -24px;
+    width: calc(100% + 48px);
+    height: 1px;
+    background-color: #dcdcdc;
+}
+
+.equalData .equalDataItem::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -24px;
+    width: calc(100% + 48px);
+    height: 1px;
+    background-color: #dcdcdc;
+}
+
+.equalData .equalDataItem .dataItem .dataInfo{
+    margin: 10px 0;
+}
+
+.equalData .equalDataItem .dataItem {
+    padding-bottom: 10px;
+}
